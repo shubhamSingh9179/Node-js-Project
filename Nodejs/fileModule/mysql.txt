@@ -1,0 +1,173 @@
+al
+CREATE USER 'user'@'host';
+
+Grant a specified type of privilege to a user on an object:
+
+GRANT privileges_name ON object TO user;
+
+Set a password for the current user:
+
+SET PASSWORD='password'
+
+1. create database student;
+
+2. show databases;
+
+3. use databases;
+
+4. create table class(id AUTO_INCREMENT PRIMARY KEY int(),name varchar(),course varchar(),
+
+5. show tables;
+
+6. insert into class values('1','ram','bba');
+
+7. check formate = desc school;
+
+ 8. select * from school;
+
+ 9. PARTICULAR = alter table school add (salary int(10);
+
+ 10. alter table school drop salary;
+
+11.  alter table class rename student;
+
+12.   alter table class modify int varchar(10);
+  
+ 11. update school set stu_name='ravi singh' where stu_id='4'; (values      change); add put value;
+
+ 12. delete from school where city='u.p';
+
+ 13. commit;
+ 
+ 14. rollback;(oracle)
+
+ 15. distinct (alag): select distinct city from employee1;
+
+ 16. alter table school modify name varchar(10);  (change only size);
+
+ 17. alter table table name change id shubh varchar(10);
+
+ 18. change a table name:= alter table employee to emp_12;  
+
+ 19. Add a primary key:= alter table emp_11 add primary key (roll_no); 
+
+ 20. select * from employee1 where age>20 and age<48;
+
+ 21. select * from student where name='ram' limit (3,6);
+
+ 22. select * from student where city='rewa' order by name limit 3;
+
+ 23. IN Command : select * from employee1 where age in (2,5);
+
+  (22)    drop database employee1;
+
+ 24.  select * from employee1 where age not in (2,5);
+
+ 25. BETWEEN : select * from table name  where column name between value1 and value2;
+
+ 26. not between;
+
+ 27. if clause: select id,name,percentage from if (percentage           >=33,"pass","fail") as result from student;
+
+ 28. CASE : select id,name,percentage from case when percentage >=80             and percentage<=100 then "merit" 
+            when percentage >=60 and percentage<=80 then "first             division"  
+            when percentage >=45 and percentage<=60 then "second             division" 
+            when percentage >=33 and percentage<=45 then "third             division" 
+            when percentage<33 then "fail"
+            end as grade from student;
+
+ 30. case update : update student set percentage =(case id when3                                                     then45 
+                                         when 7                             then68      end) where id in(3,7); 
+
+ 31. RENAME COLUMN: alter table school changen id code int();                     datatype;
+
+ 32. RENAME TABLE:alter table school rename new name datatype;
+
+ 33. REORDER: alter table student modify city varchar(10) after name; 
+
+ 34. AUTO INCREMENT: AUTOMATIC NUMBERING IN SQL
+
+ 35.join : select column from table1 inner join table2 on     student.city =city.cid;
+
+ 36. create index index_name on table_name(column1,column2,column3);
+
+ 37. drop index index_name on table_name;
+
+ 38. regular expresion: select * from student where name regexp '^[rs]';
+ 
+ 39. check = age int,check(age>=18)
+
+
+
+
+
+
+            aggregate function
+  
+  1.sum()
+  2.avg()
+  3.min()
+  4.max ()
+  5.count()
+  6.district()
+
+       structur query language  
+ 
+ 1. DDL = data definition language.(create, alter (add,modify,drop)                    trancate,rename).
+
+ 2. DML = data multipulation language.(insert ,delete ,update).
+
+ 3. DCL = 
+
+         All operators
+
+  1.    ALL	  	
+  2.    AND	   
+  3.    ANY	   	
+  4.    BETWEEn	
+  5.    EXISTS	   	
+  6.    IN	   
+  7.    LIKE	   	
+  8.    NOT	 	
+  9.    OR	   	
+  10.   SOME	  	
+
+      Arithmetic operators
+
+ 1. +	Add	
+ 2. -	Subtract	
+ 3. *	Multiply	
+ 4. /	Divide	
+ 5. %	Modulo
+
+    Bitwise operator
+
+ 1.  &	 Bitwise AND
+ 2.  |	 Bitwise OR
+ 3.  ^	 Bitwise exclusive OR
+ 4.  <>	 Not equal to	
+
+
+Auto date time generate: insert into employee values('','sanjeev',curdate(),curtime(),now() );
+
+
+https://docs.microsoft.com/en-us/dax/accrint-function-dax
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
